@@ -292,14 +292,14 @@ header .nav-bar.fixed {
   display: block;
   margin: 0 0 0 auto;
   width: 900px;
-  max-height: 500px;
+  min-height: 500px;
   overflow: hidden;
   border-radius: 18px;
 }
 @media (max-width: 768px) {
   .hero-section .continent .img-hero {
     width: 100%;
-    max-height: 700px;
+    min-height: 840px;
   }
 }
 .hero-section .continent .img-hero img {
@@ -330,7 +330,20 @@ header .nav-bar.fixed {
 .hero-section .continent .test .forms {
   position: absolute;
   left: 0;
-  top: 65%;
+  top: 60%;
+}
+@media (max-width: 991.98px) {
+  .hero-section .continent .test .forms {
+    background: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.16);
+    top: 44%;
+  }
+  .hero-section .continent .test .forms .col {
+    flex: unset;
+  }
 }
 .hero-section .continent .test .forms .nav-pills .nav-link {
   border-radius: 18px;
