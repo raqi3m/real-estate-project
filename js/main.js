@@ -46,3 +46,21 @@ window.onscroll = function () {
 btn.addEventListener("click", function () {
   scrollTo(document.body, document.body.offsetTop, 400);
 });
+
+let openNav = document.querySelector(".icon-open");
+let openNavIcon = document.querySelector(".icon-open i");
+let openNavLink = document.querySelectorAll("a");
+
+let nav = document.querySelector(".nav");
+
+openNav.addEventListener("click", function () {
+  openNavIcon.classList.toggle("fa-times");
+  nav.classList.toggle("show");
+});
+
+openNavLink.forEach((a) => {
+  a.addEventListener("click", function () {
+    openNavIcon.classList.remove("fa-times");
+    nav.classList.remove("show");
+  });
+});
