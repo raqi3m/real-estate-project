@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Real Estate</title>
+  <!-- Bootstrap Css File -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- Normalize Css File -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <!-- Fonts Icons -->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <!-- OwL Css File -->
+  <link rel="stylesheet" href="CSS/owl.carousel.min.css">
+  <link rel="stylesheet" href="CSS/owl.theme.default.min.css">
+  <!-- Custom Css File -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- ===================Start Header =================== -->
+  <header class="header" id="header">
+    <!-- Start Navigation -->
+    <div class="container">
+      <div class="nav-bar">
+        <a href="index.html" class="logo">
+          <img src="img/svg/logo.png" alt="" />
+        </a>
+
+        <ul class="nav">
+          <li><a class="active" href="index.html">home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#featured">Featured</a></li>
+          <li><a href="#footer">Contact</a></li>
+        </ul>
+
+        <ul class="right-side">
+          <li>
+            <form>
+              <div class="form-group">
+                <input id="search" class="form-control" type="search" placeholder="Saved Search" />
+                <span class="icon-search">
+                  <i class="fas fa-search"></i>
+                </span>
+              </div>
+            </form>
+          </li>
+          <li>
+            <div class="notification">
+              <a href="#" class="icon-notification">
+                <i class="far fa-bell"></i>
+
+                <span class="circle"></span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="auth">
+              <button type="button" class="btn btn-main">login</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- End navigation -->
+  </header>
+  <!-- ===================End Header =================== -->
+
+  <!-- =================== Start Hero Section =================== -->
+  <div class="hero-section">
+    <div class="container">
+      <div class="continent">
+        <div class="img-hero">
+          <img src="img/svg/pierre-chatel-innocenti-gxyeia7Syuk-unsplash.png" />
+        </div>
+        <div class="test">
+          <div class="text">
+            <h1><span>Let’s find </span> yours Dream..</h1>
+            <p>
+              Building award winning properties across London <br />
+              UK and the All world
+            </p>
+          </div>
+          <div class="forms">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                  type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                  Buy
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                  type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                  Sell
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                  type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+                  Rent
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <form>
+                  <div class="row g-3">
+                    <div class="col">
+                      <label for="">City/Street</label>
+                      <input type="text" class="form-control" placeholder="First name" aria-label="First name" />
+                    </div>
+                    <div class="col">
+                      <label for="">Apartment Type</label>
+                      <select class="form-select" id="specificSizeSelect">
+                        <option selected>Deluxe Portion...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                      </select>
+                    </div>
+                    <div class="col">
+                      <label for="">Price Range</label>
+                      <select class="form-select" id="specificSizeSelect">
+                        <option selected>Min price - Max price</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                      </select>
+                    </div>
+                    <div class="col center">
+                      <a href="#"><i class="fas fa-plus"></i> Advance Filter</a>
+                    </div>
+                    <div class="col col-custom">
+                      <input type="submit" class="btn btn-primary" value="Search" />
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <form>
+                  <div class="row g-3">
+                    <div class="col">
+                      <label for="">City/Street</label>
+                      <input type="text" class="form-control" placeholder="First name" aria-label="First name" />
+                    </div>
+                    <div class="col">
+                      <label for="">Apartment Type</label>
+                      <select class="form-select" id="specificSizeSelect">
+                        <option selected>Deluxe Portion...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                      </select>
+                    </div>
+                    <div class="col">
+                      <label for="">Price Range</label>
+                      <select class="form-select" id="specificSizeSelect">
+                        <option selected>Min price - Max price</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                      </select>
+                    </div>
+                    <div class="col center">
+                      <a href="#"><i class="fas fa-plus"></i> Advance Filter</a>
+                    </div>
+                    <div class="col col-custom">
+                      <input type="submit" class="btn btn-primary" value="Search" />
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                <form>
+                  <div class="row g-3">
+                    <div class="col">
+                      <label for="">City/Street</label>
+                      <input type="text" class="form-control" placeholder="First name" aria-label="First name" />
+                    </div>
+                    <div class="col">
+                      <label for="">Apartment Type</label>
+                      <select class="form-select" id="specificSizeSelect">
+                        <option selected>Deluxe Portion...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                      </select>
+                    </div>
+                    <div class="col">
+                      <label for="">Price Range</label>
+                      <select class="form-select" id="specificSizeSelect">
+                        <option selected>Min price - Max price</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                      </select>
+                    </div>
+                    <div class="col center">
+                      <a href="#"><i class="fas fa-plus"></i> Advance Filter</a>
+                    </div>
+                    <div class="col col-custom">
+                      <input type="submit" class="btn btn-primary" value="Search" />
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- =================== End Hero Section =================== -->
+
+  <!-- =================== Start Apartment  Section =================== -->
+  <section class="apartment" id="apartment">
+    <div class="headeing">
+      <h2>
+        HI, What do you want to your
+        <span> Dream Apartment </span>
+      </h2>
+
+      <p>Select a Apartment type below to begins</p>
+    </div>
+
+    <form id="test">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="box">
+              <img src="img/svg/img-01.png" alt="" />
+              <h4>
+                <label for="one"> Deluxe Portion</label>
+              </h4>
+
+              <div class="form-check form-check-inline">
+                <input id="one" class="form-check-input" type="checkbox" name="" checked value="true" />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="box">
+              <img src="img/svg/img-02.png" alt="" />
+              <h4>
+                <label for="tow"> Double Height</label>
+              </h4>
+
+              <div class="form-check form-check-inline">
+                <input id="tow" class="form-check-input" type="checkbox" name="" value="true" />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="box">
+              <img src="img/svg/img-01.png" alt="" />
+              <h4>
+                <label for="three">Penthouse</label>
+              </h4>
+
+              <div class="form-check form-check-inline">
+                <input id="three" class="form-check-input" type="checkbox" name="" value="true" />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="box">
+              <img src="img/svg/img-02.png" alt="" />
+              <h4>
+                <label for="for"> The Studio</label>
+              </h4>
+
+              <div class="form-check form-check-inline">
+                <input id="for" class="form-check-input" type="checkbox" name="" value="true" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center align-items-center mt-5">
+          <div class="col-lg-4">
+            <input type="submit" class="btn btn-main btn-lg btn-block" value="Continue" />
+          </div>
+        </div>
+      </div>
+    </form>
+  </section>
+  <!-- =================== End Apartment  Section =================== -->
+
+  <!-- =================== Start Featured   Section =================== -->
+  <section class="featured" id="featured">
+    <div class="headeing">
+      <h2>Featured Apartment</h2>
+
+      <p>
+        The Most frequently searched and most popular apartment of the
+        application will be in the list
+      </p>
+    </div>
+
+    <div class="container">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <div class="box">
+            <div class="img-box">
+              <img src="img/svg/f-01.png" alt="" />
+              <div class="top-data">
+                <span class="left">
+                  1.2 km away
+                </span>
+                <span class="right">
+                  For rent
+                </span>
+              </div>
+
+              <div class="customer">
+                <img src="img/svg/person.jpg" alt="">
+              </div>
+            </div>
+
+            <div class="text">
+              <span class="map">
+                <i class="fas fa-map-marker-alt"></i>
+                Knightsbridge
+              </span>
+
+              <span class="price">
+                $2,500
+              </span>
+
+              <h4>Apartment London</h4>
+              <p>Beautiful Huge 1 Family House In Heart Of Westbury Newly Renovated With New Furniture</p>
+
+              <div class="box-footer">
+                <div class="left">
+                  <ul>
+                    <li>
+                      <span class="num">2</span>
+                      <span class="icon">
+                        <i class="fas fa-bed"></i>
+                      </span>
+                      <span>Bedrooms</span>
+                    </li>
+                    <li>
+                      <span class="num">2</span>
+                      <span class="icon">
+                        <i class="fas fa-bath"></i>
+                      </span>
+                      <span>Bedrooms</span>
+                    </li>
+                    <li>
+                      <span class="num">1776</span>
+                      <span class="icon">
+                        <i class="fas fa-expand"></i>
+                      </span>
+                      <span>Squre Ft</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="right">
+                  <ul>
+                    <li>
+                      <div class="icon">
+                        <i class="fas fa-expand"></i>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="icon">
+                        <i class="far fa-heart"></i>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="icon">
+                        <i class="fas fa-plus-circle"></i>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="img-box">
+              <img src="img/svg/f-01.png" alt="" />
+              <div class="top-data">
+                <span class="left">
+                  1.2 km away
+                </span>
+                <span class="right">
+                  For rent
+                </span>
+              </div>
+
+              <div class="customer">
+                <img src="img/svg/person.jpg" alt="">
+              </div>
+            </div>
+
+            <div class="text">
+              <span class="map">
+                <i class="fas fa-map-marker-alt"></i>
+                Knightsbridge
+              </span>
+
+              <span class="price">
+                $2,500
+              </span>
+
+              <h4>Apartment London</h4>
+              <p>Beautiful Huge 1 Family House In Heart Of Westbury Newly Renovated With New Furniture</p>
+
+              <div class="box-footer">
+                <div class="left">
+                  <ul>
+                    <li>
+                      <span class="num">2</span>
+                      <span class="icon">
+                        <i class="fas fa-bed"></i>
+                      </span>
+                      <span>Bedrooms</span>
+                    </li>
+                    <li>
+                      <span class="num">2</span>
+                      <span class="icon">
+                        <i class="fas fa-bath"></i>
+                      </span>
+                      <span>Bedrooms</span>
+                    </li>
+                    <li>
+                      <span class="num">1776</span>
+                      <span class="icon">
+                        <i class="fas fa-expand"></i>
+                      </span>
+                      <span>Squre Ft</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="right">
+                  <ul>
+                    <li>
+                      <div class="icon">
+                        <i class="fas fa-expand"></i>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="icon">
+                        <i class="far fa-heart"></i>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="icon">
+                        <i class="fas fa-plus-circle"></i>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="img-box">
+              <img src="img/svg/f-01.png" alt="" />
+              <div class="top-data">
+                <span class="left">
+                  1.2 km away
+                </span>
+                <span class="right">
+                  For rent
+                </span>
+              </div>
+
+              <div class="customer">
+                <img src="img/svg/person.jpg" alt="">
+              </div>
+            </div>
+
+            <div class="text">
+              <span class="map">
+                <i class="fas fa-map-marker-alt"></i>
+                Knightsbridge
+              </span>
+
+              <span class="price">
+                $2,500
+              </span>
+
+              <h4>Apartment London</h4>
+              <p>Beautiful Huge 1 Family House In Heart Of Westbury Newly Renovated With New Furniture</p>
+
+              <div class="box-footer">
+                <div class="left">
+                  <ul>
+                    <li>
+                      <span class="num">2</span>
+                      <span class="icon">
+                        <i class="fas fa-bed"></i>
+                      </span>
+                      <span>Bedrooms</span>
+                    </li>
+                    <li>
+                      <span class="num">2</span>
+                      <span class="icon">
+                        <i class="fas fa-bath"></i>
+                      </span>
+                      <span>Bedrooms</span>
+                    </li>
+                    <li>
+                      <span class="num">1776</span>
+                      <span class="icon">
+                        <i class="fas fa-expand"></i>
+                      </span>
+                      <span>Squre Ft</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="right">
+                  <ul>
+                    <li>
+                      <div class="icon">
+                        <i class="fas fa-expand"></i>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="icon">
+                        <i class="far fa-heart"></i>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="icon">
+                        <i class="fas fa-plus-circle"></i>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="img-box">
+              <img src="img/svg/f-01.png" alt="" />
+              <div class="top-data">
+                <span class="left">
+                  1.2 km away
+                </span>
+                <span class="right">
+                  For rent
+                </span>
+              </div>
+
+              <div class="customer">
+                <img src="img/svg/person.jpg" alt="">
+              </div>
+            </div>
+
+            <div class="text">
+              <span class="map">
+                <i class="fas fa-map-marker-alt"></i>
+                Knightsbridge
+              </span>
+
+              <span class="price">
+                $2,500
+              </span>
+
+              <h4>Apartment London</h4>
+              <p>Beautiful Huge 1 Family House In Heart Of Westbury Newly Renovated With New Furniture</p>
+
+              <div class="box-footer">
+                <div class="left">
+                  <ul>
+                    <li>
+                      <span class="num">2</span>
+                      <span class="icon">
+                        <i class="fas fa-bed"></i>
+                      </span>
+                      <span>Bedrooms</span>
+                    </li>
+                    <li>
+                      <span class="num">2</span>
+                      <span class="icon">
+                        <i class="fas fa-bath"></i>
+                      </span>
+                      <span>Bedrooms</span>
+                    </li>
+                    <li>
+                      <span class="num">1776</span>
+                      <span class="icon">
+                        <i class="fas fa-expand"></i>
+                      </span>
+                      <span>Squre Ft</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="right">
+                  <ul>
+                    <li>
+                      <div class="icon">
+                        <i class="fas fa-expand"></i>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="icon">
+                        <i class="far fa-heart"></i>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="icon">
+                        <i class="fas fa-plus-circle"></i>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="img-box">
+              <img src="img/svg/f-01.png" alt="" />
+              <div class="top-data">
+                <span class="left">
+                  1.2 km away
+                </span>
+                <span class="right">
+                  For rent
+                </span>
+              </div>
+
+              <div class="customer">
+                <img src="img/svg/person.jpg" alt="">
+              </div>
+            </div>
+
+            <div class="text">
+              <span class="map">
+                <i class="fas fa-map-marker-alt"></i>
+                Knightsbridge
+              </span>
+
+              <span class="price">
+                $2,500
+              </span>
+
+              <h4>Apartment London</h4>
+              <p>Beautiful Huge 1 Family House In Heart Of Westbury Newly Renovated With New Furniture</p>
+
+              <div class="box-footer">
+                <div class="left">
+                  <ul>
+                    <li>
+                      <span class="num">2</span>
+                      <span class="icon">
+                        <i class="fas fa-bed"></i>
+                      </span>
+                      <span>Bedrooms</span>
+                    </li>
+                    <li>
+                      <span class="num">2</span>
+                      <span class="icon">
+                        <i class="fas fa-bath"></i>
+                      </span>
+                      <span>Bedrooms</span>
+                    </li>
+                    <li>
+                      <span class="num">1776</span>
+                      <span class="icon">
+                        <i class="fas fa-expand"></i>
+                      </span>
+                      <span>Squre Ft</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="right">
+                  <ul>
+                    <li>
+                      <div class="icon">
+                        <i class="fas fa-expand"></i>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="icon">
+                        <i class="far fa-heart"></i>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="icon">
+                        <i class="fas fa-plus-circle"></i>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- =================== End Featured   Section =================== -->
+
+  <!-- =================== Start Plans  Section =================== -->
+  <section class="plans" id="plans">
+    <div class="headeing">
+      <h2>Apartment Plans</h2>
+    </div>
+    <div class="container">
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-studio"
+            type="button" role="tab" aria-controls="pills-studio" aria-selected="false">The Studio</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-portion"
+            type="button" role="tab" aria-controls="pills-portion" aria-selected="true">Deluxe Portion </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-penthouse"
+            type="button" role="tab" aria-controls="pills-penthouse" aria-selected="false">Penthouse</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-garden"
+            type="button" role="tab" aria-controls="pills-garden" aria-selected="false">Top Garden</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-height"
+            type="button" role="tab" aria-controls="pills-height" aria-selected="false">Double Height</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade " id="pills-studio" role="tabpanel" aria-labelledby="pills-studio-tab">studio</div>
+        <div class="tab-pane fade show active" id="pills-portion" role="tabpanel" aria-labelledby="pills-portion-tab">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <div class="box">
+                <h3>Deluxe Portion</h3>
+                <p>
+                  Boasting chic interiors, three private balconies and a remarkable terrace, this two bedroom apartment
+                  will epitomise complete luxury. Not only will residents benefit from a superb location in the heart of
+                  Shoreditch, but they will also enjoy unrivalled facilities and a 24-hour bespoke concierge.
+                </p>
+                <ul>
+                  <li><span class="left">Total Area</span> …………………………………… <span class="right">2800 Sq. Ft</span></li>
+                  <li><span class="left">Bedroom</span> …………………………………… <span class="right">2800 Sq. Ft</span></li>
+                  <li><span class="left">Bathroom </span> …………………………………… <span class="right">2800 Sq. Ft</span></li>
+                  <li><span class="left">Smoking/ pets </span> …………………………………… <span class="right">2800 Sq. Ft</span>
+                  </li>
+                  <li><span class="left">Lounge </span> …………………………………… <span class="right">2800 Sq. Ft</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <div class="img-box">
+                <img src="img/svg/map.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="pills-penthouse" role="tabpanel" aria-labelledby="pills-penthouse-tab">penthouse
+        </div>
+        <div class="tab-pane fade" id="pills-garden" role="tabpanel" aria-labelledby="pills-garden-tab">garden</div>
+        <div class="tab-pane fade" id="pills-height" role="tabpanel" aria-labelledby="pills-height-tab">height</div>
+      </div>
+    </div>
+  </section>
+  <!-- =================== End Plans Section =================== -->
+
+  <!-- =================== Start Prime Section =================== -->
+  <section class="prime" id="prime">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-4 col-md-12 col-sm-12">
+          <h3>
+            <span>Buy</span>
+            <span>Dream Apartment</span>
+            <span>In <strong>Prime location </strong></span>
+          </h3>
+
+          <a href="#" class="btn btn-main">
+            See All Apartment
+          </a>
+        </div>
+        <div class="col-lg-8 col-md-12 col-sm-12">
+          <div class="box">
+            <div class="img-beeg">
+              <img src="img/svg/beeg.png" alt="">
+            </div>
+            <div class="img-small">
+              <img src="img/svg/small.png" alt="">
+
+              <a href="#" class="play-vedio">
+                <i class="fas fa-play-circle"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- =================== End Prime Section =================== -->
+
+  <!-- =================== Start Apartments Section =================== -->
+  <section class="apartments" id="apartments">
+
+
+    <div class="headeing">
+      <span>Apartments</span>
+      <h2> Featured Listings</h2>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-car"></i>
+            </div>
+
+            <h4>Parking Space</h4>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-swimming-pool"></i>
+            </div>
+
+            <h4>Swinning Poll</h4>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-user-shield"></i>
+            </div>
+
+            <h4>Private Security</h4>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-stethoscope"></i>
+            </div>
+
+            <h4>Medical Center</h4>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-city"></i>
+            </div>
+
+            <h4>Library Area</h4>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-bed"></i>
+            </div>
+
+            <h4>King Size Beds</h4>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-home"></i>
+            </div>
+
+            <h4>Smart Home</h4>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-child"></i>
+            </div>
+
+            <h4>Kids Playland</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- =================== End Apartments Section =================== -->
+  <!-- =================== Start FAQ Section =================== -->
+  <section class="faq" id="faq">
+    <div class="headeing">
+      <h2>Frequently Asked Questions</h2>
+    </div>
+
+    <div class="container">
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button " type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              What the First Step of the Dream Apartment buying process ?
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse" aria-labelledby="flush-headingOne"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              First, you need to know how much you can borrow, knowing how much home you can afford narrows down online
+              apartment searching to suitable Properties , thus no time is Wasted considering apartment that are not
+              within your dream and budget.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              How Long does It take to buy Apartment ?
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+              <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being
+              filled with some actual content.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              How much do I need for a down payment ?
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingFor"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+              <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
+              happening here in terms of content, but just filling up the space to make it look, at least at first
+              glance, a bit more representative of how this would look in a real-world application.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+              What is popular in Apartment ? </button>
+          </h2>
+          <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+              <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
+              happening here in terms of content, but just filling up the space to make it look, at least at first
+              glance, a bit more representative of how this would look in a real-world application.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFor">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFor" aria-expanded="false" aria-controls="flush-collapseFor">
+              What is a buyer's market ?
+            </button>
+          </h2>
+          <div id="flush-collapseFor" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+              <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
+              happening here in terms of content, but just filling up the space to make it look, at least at first
+              glance, a bit more representative of how this would look in a real-world application.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- =================== End FAQ Section =================== -->
+
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-12">
+          <div class="logo">
+            <img src="img/svg/logo.png" alt="">
+          </div>
+          <p> The most beautiful exclusive properties and luxury apartments</p>
+
+          <div class="social-link">
+            <a href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-telegram-plane"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-12">
+          <h5>Useful Links</h5>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-12">
+          <h5>Help?</h5>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Term & Conditi0on</a></li>
+            <li><a href="#">Policy</a></li>
+            <li><a href="#">Privacy</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-12">
+          <h5>Address</h5>
+          <ul>
+            <li>113-115 Old Brompton Road <br>
+              SW7 3LE LONDON, UNITED KINGDOM
+            </li>
+            <li>website :www.mordern.com
+            </li>
+            <li>mobie</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <div class="copy">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-sm-12">
+            <p class="left">© Copyright 2021, morden.com</p>
+          </div>
+          <div class="col-lg-6 col-sm-12">
+            <p class="right">Terms & Condition | Privacy Policy</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <div class="scroll-top">
+    <i class="fas fa-angle-double-up"></i>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Java Script Bootstrap -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- Java script Custom  -->
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
