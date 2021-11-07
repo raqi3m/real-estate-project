@@ -817,6 +817,9 @@ footer {
   font-family: "NotoSansKR-Regular";
   font-weight: 100;
 }
+footer h5 {
+  margin-top: 30px;
+}
 footer .logo {
   margin-bottom: 20px;
 }
