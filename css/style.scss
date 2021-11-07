@@ -1,3 +1,4 @@
+@import "_mixsn.scss";
 @font-face {
   font-family: "Sen-Bold";
   src: url("../webfonts/Sen-Bold.ttf");
@@ -133,6 +134,19 @@ section {
     font-size: 16px;
   }
 }
+
+.icon-open {
+  position: relative;
+  z-index: 999999999999999999999999999999;
+  display: none;
+  margin: 0 auto;
+  @include tabletsdown {
+    display: block;
+  }
+  i{
+    color: $mainColor;
+  }
+}
 /* Start Header */
 
 header {
@@ -146,12 +160,31 @@ header {
     .logo {
       img {
         width: 150px;
+        @include mobile {
+          width: 100px;
+        }
       }
     }
     .nav {
       display: flex;
       align-items: center;
       gap: 20px;
+      @include tabletsdown {
+        position: fixed;
+        left: -250px;
+        top: 86px;
+        width: 250px;
+        height: 100vh;
+        background-color: $whiteColor;
+        flex-direction: column;
+        gap: 50px;
+        padding-top: 80px;
+        z-index: 9999999;
+        transition: $mainTranstion;
+        &.show {
+          left: 0;
+        }
+      }
       li {
         a {
           font-size: 18px;
@@ -171,6 +204,9 @@ header {
       gap: 20px;
       li {
         form {
+          @include mobile {
+            display: none;
+          }
           .form-group {
             position: relative;
             width: 135px;
@@ -206,6 +242,11 @@ header {
             line-height: 40px;
             border-radius: 50%;
             position: relative;
+            @include tabletsdown {
+              width: 30px;
+              height: 30px;
+              line-height: 30px;
+            }
             i {
               font-size: 18px;
               color: $mainColor;
@@ -219,6 +260,10 @@ header {
               width: 10px;
               height: 10px;
               border-radius: 50%;
+              @include tabletsdown {
+                top: 5px;
+                right: 5px;
+              }
             }
           }
         }
@@ -231,6 +276,9 @@ header {
             opacity: 0.9;
             border-radius: 10px;
             transition: $mainTranstion;
+            @include tabletsdown {
+              font-size: 12px;
+            }
             &:hover {
               background-color: $primaryColor;
               opacity: 1;

@@ -121,6 +121,21 @@ section {
   font-size: 16px;
 }
 
+.icon-open {
+  position: relative;
+  z-index: 1000000000000000000000000000000;
+  display: none;
+  margin: 0 auto;
+}
+@media (max-width: 991.98px) {
+  .icon-open {
+    display: block;
+  }
+}
+.icon-open i {
+  color: #2289ff;
+}
+
 /* Start Header */
 header {
   background-color: #ffffff;
@@ -134,10 +149,33 @@ header .nav-bar {
 header .nav-bar .logo img {
   width: 150px;
 }
+@media (max-width: 576px) {
+  header .nav-bar .logo img {
+    width: 100px;
+  }
+}
 header .nav-bar .nav {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+@media (max-width: 991.98px) {
+  header .nav-bar .nav {
+    position: fixed;
+    left: -250px;
+    top: 86px;
+    width: 250px;
+    height: 100vh;
+    background-color: #ffffff;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 80px;
+    z-index: 9999999;
+    transition: All 0.5s ease;
+  }
+  header .nav-bar .nav.show {
+    left: 0;
+  }
 }
 header .nav-bar .nav li a {
   font-size: 18px;
@@ -152,6 +190,11 @@ header .nav-bar .right-side {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+@media (max-width: 576px) {
+  header .nav-bar .right-side li form {
+    display: none;
+  }
 }
 header .nav-bar .right-side li form .form-group {
   position: relative;
@@ -187,6 +230,13 @@ header .nav-bar .right-side li .notification .icon-notification {
   border-radius: 50%;
   position: relative;
 }
+@media (max-width: 991.98px) {
+  header .nav-bar .right-side li .notification .icon-notification {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+}
 header .nav-bar .right-side li .notification .icon-notification i {
   font-size: 18px;
   color: #2289ff;
@@ -200,6 +250,12 @@ header .nav-bar .right-side li .notification .icon-notification .circle {
   height: 10px;
   border-radius: 50%;
 }
+@media (max-width: 991.98px) {
+  header .nav-bar .right-side li .notification .icon-notification .circle {
+    top: 5px;
+    right: 5px;
+  }
+}
 header .nav-bar .right-side li .auth .btn-main {
   background-color: #2289ff;
   color: #ffffff;
@@ -208,6 +264,11 @@ header .nav-bar .right-side li .auth .btn-main {
   opacity: 0.9;
   border-radius: 10px;
   transition: All 0.5s ease;
+}
+@media (max-width: 991.98px) {
+  header .nav-bar .right-side li .auth .btn-main {
+    font-size: 12px;
+  }
 }
 header .nav-bar .right-side li .auth .btn-main:hover {
   background-color: #186aa5;
