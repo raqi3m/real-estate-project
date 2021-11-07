@@ -299,7 +299,7 @@ header .nav-bar.fixed {
 @media (max-width: 768px) {
   .hero-section .continent .img-hero {
     width: 100%;
-    min-height: 800px;
+    min-height: 750px;
   }
 }
 .hero-section .continent .img-hero img {
